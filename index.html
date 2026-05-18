@@ -19,74 +19,42 @@
 
 body{
     font-family:'Poppins', sans-serif;
-    background:linear-gradient(to bottom,#eef6d5,#dcefc2);
+    background:linear-gradient(to bottom,#edf6d6,#dff0c4);
     overflow-x:hidden;
-    color:#222;
-}
-
-/* FONDO DECORACION */
-
-.fondo{
-    position:fixed;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    overflow:hidden;
-}
-
-.hoja{
-    position:absolute;
-    font-size:40px;
-    animation:mover 12s linear infinite;
-    opacity:0.3;
-}
-
-.h1{left:10%; top:-10%;}
-.h2{left:50%; top:-20%;}
-.h3{left:80%; top:-15%;}
-
-@keyframes mover{
-    0%{
-        transform:translateY(0) rotate(0deg);
-    }
-    100%{
-        transform:translateY(120vh) rotate(360deg);
-    }
 }
 
 /* HEADER */
 
 header{
     background:#fff9ef;
-    padding:50px 20px;
     text-align:center;
-    border-bottom-left-radius:45px;
-    border-bottom-right-radius:45px;
+    padding:50px 20px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
     box-shadow:0 5px 15px rgba(0,0,0,0.12);
 }
 
 header h1{
-    font-size:60px;
-    color:#1c5c27;
-    margin-bottom:10px;
+    font-size:55px;
+    color:#165a22;
+    margin-bottom:15px;
 }
 
 header p{
     font-size:24px;
     color:#5d4037;
+    line-height:1.5;
 }
 
-/* BOTON */
-
 .boton{
-    margin-top:25px;
     display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
     background:#2e7d32;
     color:white;
-    padding:14px 28px;
-    border-radius:40px;
     text-decoration:none;
-    font-size:20px;
+    border-radius:50px;
+    font-size:22px;
     transition:0.3s;
 }
 
@@ -98,41 +66,31 @@ header p{
 /* CONTENEDOR */
 
 .contenedor{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
+    width:100%;
     padding:40px 0;
 }
 
 /* TARJETAS */
 
 .tarjeta{
-    background:#fffdf6;
+    background:#fffdf8;
+    width:90%;
+    max-width:420px;
+    margin:35px auto;
     border-radius:35px;
     overflow:hidden;
-    margin-bottom:45px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    box-shadow:0 12px 30px rgba(0,0,0,0.15);
     transition:0.4s;
 }
 
 .tarjeta:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 30px rgba(0,0,0,0.22);
-}
-
-.imagen{
-    overflow:hidden;
+    transform:translateY(-6px);
 }
 
 .imagen img{
     width:100%;
-    height:320px;
+    height:230px;
     object-fit:cover;
-    transition:0.5s;
-}
-
-.tarjeta:hover img{
-    transform:scale(1.08);
 }
 
 .info{
@@ -140,57 +98,58 @@ header p{
 }
 
 .info h2{
-    font-size:45px;
-    color:#1c5c27;
+    font-size:42px;
+    color:#165a22;
     margin-bottom:15px;
 }
 
 .info p{
-    font-size:22px;
-    line-height:1.8;
+    font-size:20px;
     color:#333;
+    line-height:1.8;
 }
 
-/* DATOS */
+/* ETIQUETAS */
 
 .datos{
-    margin-top:20px;
     display:flex;
     flex-wrap:wrap;
     gap:15px;
+    margin-top:25px;
 }
 
 .dato{
     background:#edf7e7;
-    padding:10px 18px;
-    border-radius:25px;
-    font-size:16px;
-    color:#2e7d32;
-    font-weight:300;
+    padding:12px 20px;
+    border-radius:30px;
+    color:#4e8b4d;
+    font-size:17px;
 }
 
 /* FOOTER */
 
 footer{
-    text-align:center;
-    background:#184d1f;
+    width:90%;
+    max-width:420px;
+    margin:40px auto;
+    background:#14551f;
     color:white;
-    padding:30px;
-    border-top-left-radius:35px;
-    border-top-right-radius:35px;
-    margin-top:40px;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:40px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 footer p{
-    font-size:18px;
+    font-size:22px;
 }
 
 /* RESPONSIVE */
 
-@media(max-width:600px){
+@media(max-width:500px){
 
 header h1{
-    font-size:42px;
+    font-size:45px;
 }
 
 .info h2{
@@ -198,11 +157,7 @@ header h1{
 }
 
 .info p{
-    font-size:10px;
-}
-
-.imagen img{
-    height:200px;
+    font-size:18px;
 }
 
 }
@@ -212,27 +167,23 @@ header h1{
 
 <body>
 
-<!-- FONDO -->
-
-<div class="fondo">
-<div class="hoja h1">🍃</div>
-<div class="hoja h2">🌿</div>
-<div class="hoja h3">🍃</div>
-</div>
-
 <!-- HEADER -->
 
 <header>
 
 <h1>🐾 Mundo Animal 🐾</h1>
 
-<p>Descubre animales increíbles de nuestro planeta.</p>
+<p>
+Descubre animales increíbles de nuestro planeta.
+</p>
 
-<a href="#animales" class="boton">Explorar Animales</a>
+<a href="#animales" class="boton">
+Explorar Animales
+</a>
 
 </header>
 
-<!-- CONTENIDO -->
+<!-- CONTENEDOR -->
 
 <div class="contenedor" id="animales">
 
@@ -241,8 +192,7 @@ header h1{
 <div class="tarjeta">
 
 <div class="imagen">
-<img src="https://i.ibb.co/C35F7Th2/2288b000-e31f-11f0-9cea-f1ab704c03ad-1.jpg"
-
+<img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1200&auto=format&fit=crop">
 </div>
 
 <div class="info">
@@ -250,9 +200,8 @@ header h1{
 <h2>🐯 Tigre</h2>
 
 <p>
-El tigre es el felino más grande del mundo y uno de los animales más impresionantes de la naturaleza. 
-Sus rayas negras son únicas en cada tigre, como las huellas de los humanos. 
-Es fuerte, rápido y excelente nadador.
+El tigre es el felino más grande del mundo. 
+Sus rayas negras son únicas y es un excelente cazador y nadador.
 </p>
 
 <div class="datos">
@@ -277,8 +226,7 @@ Es fuerte, rápido y excelente nadador.
 <h2>🦅 Águila</h2>
 
 <p>
-El águila es un ave poderosa con una vista increíble. 
-Puede detectar presas desde kilómetros de distancia y volar a grandes alturas con elegancia.
+El águila tiene una vista increíble y puede volar a grandes alturas con mucha elegancia.
 </p>
 
 <div class="datos">
@@ -295,8 +243,7 @@ Puede detectar presas desde kilómetros de distancia y volar a grandes alturas c
 <div class="tarjeta">
 
 <div class="imagen">
-<img src="https://i.ibb.co/RkTsLVr7/images-1.jpg" 
-
+<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop">
 </div>
 
 <div class="info">
@@ -304,8 +251,7 @@ Puede detectar presas desde kilómetros de distancia y volar a grandes alturas c
 <h2>🐬 Delfín</h2>
 
 <p>
-Los delfines son animales marinos inteligentes y amigables. 
-Les gusta jugar, nadar en grupo y comunicarse usando sonidos especiales.
+Los delfines son inteligentes, amigables y les encanta nadar y jugar en grupo.
 </p>
 
 <div class="datos">
@@ -330,8 +276,7 @@ Les gusta jugar, nadar en grupo y comunicarse usando sonidos especiales.
 <h2>🐢 Tortuga</h2>
 
 <p>
-La tortuga es un animal tranquilo y resistente. 
-Su caparazón la protege de muchos peligros y algunas especies pueden vivir más de 100 años.
+La tortuga es tranquila y resistente. Algunas especies pueden vivir más de 100 años.
 </p>
 
 <div class="datos">
@@ -349,7 +294,9 @@ Su caparazón la protege de muchos peligros y algunas especies pueden vivir más
 
 <footer>
 
-<p>🌿 Página creada por ALEX R.C.🌿</p>
+<p>
+🌿 Página creada por ALEX R.C. 🌿
+</p>
 
 </footer>
 
