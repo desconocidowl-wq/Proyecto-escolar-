@@ -1,304 +1,135 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UFT-8"
+    
+  </head>
 
-<title>Mundo Animal</title>
+  
+  <style>
+    body{
+      background:#189;
+      font-family: Arial;
+     color:white ;
+     padding: 30px;
+    }
+    .card{
+      background: #101;
+      padding: 30px;
+      margin: 30px;
+      border-radius: 30px;
+    }
+    h1{
+      color: white;
+    }
+    
+    /* FONDO DECORACION */
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins', sans-serif;
-    background:linear-gradient(to bottom,#edf6d6,#dff0c4);
-    overflow-x:hidden;
-}
-
-/* HEADER */
-
-header{
-    background:#fff9ef;
-    text-align:center;
-    padding:50px 20px;
-    border-bottom-left-radius:40px;
-    border-bottom-right-radius:40px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.12);
-}
-
-header h1{
-    font-size:55px;
-    color:#165a22;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:24px;
-    color:#5d4037;
-    line-height:1.5;
-}
-
-.boton{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#2e7d32;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    font-size:22px;
-    transition:0.3s;
-}
-
-.boton:hover{
-    background:#1b5e20;
-    transform:scale(1.05);
-}
-
-/* CONTENEDOR */
-
-.contenedor{
+.fondo{
+    position:fixed;
     width:100%;
-    padding:40px 0;
-}
-
-/* TARJETAS */
-
-.tarjeta{
-    background:#fffdf8;
-    width:90%;
-    max-width:420px;
-    margin:35px auto;
-    border-radius:35px;
+    height:100%;
+    z-index:-1;
     overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,0.15);
-    transition:0.4s;
 }
 
-.tarjeta:hover{
-    transform:translateY(-6px);
+.hoja{
+    position:absolute;
+    font-size:40px;
+    animation:mover 12s linear infinite;
+    opacity:0.3;
 }
 
-.imagen img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
+.h1{left:10%; top:-10%;}
+.h2{left:50%; top:-20%;}
+.h3{left:80%; top:-15%;}
+
+@keyframes mover{
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+    100%{
+        transform:translateY(120vh) rotate(360deg);
+    }
 }
 
-.info{
-    padding:25px;
-}
+    
+  </style>
 
-.info h2{
-    font-size:42px;
-    color:#165a22;
-    margin-bottom:15px;
-}
-
-.info p{
-    font-size:20px;
-    color:#333;
-    line-height:1.8;
-}
-
-/* ETIQUETAS */
-
-.datos{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-    margin-top:25px;
-}
-
-.dato{
-    background:#edf7e7;
-    padding:12px 20px;
-    border-radius:30px;
-    color:#4e8b4d;
-    font-size:17px;
-}
-
-/* FOOTER */
-
-footer{
-    width:90%;
-    max-width:420px;
-    margin:40px auto;
-    background:#14551f;
-    color:white;
-    text-align:center;
-    padding:35px 20px;
-    border-radius:40px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
-}
-
-footer p{
-    font-size:22px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:500px){
-
-header h1{
-    font-size:45px;
-}
-
-.info h2{
-    font-size:35px;
-}
-
-.info p{
-    font-size:18px;
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<!-- HEADER -->
-
-<header>
-
-<h1>🐾 Mundo Animal 🐾</h1>
+  
+ <body><h1 style="color:#150F70;">
+🐾 Mundo Animal 🐾
+</h1>
 
 <p>
-Descubre animales increíbles de nuestro planeta.
+Bienvenido a mi página sobre animales.
 </p>
 
-<a href="#animales" class="boton">
-Explorar Animales
-</a>
+<h2 style="color:#38bdf8;">
+🐯 Tigre
+</h2>
 
-</header>
-
-<!-- CONTENEDOR -->
-
-<div class="contenedor" id="animales">
-
-<!-- TIGRE -->
-
-<div class="tarjeta">
-
-<div class="imagen">
-<img src="https://images.unsplash.com/photo-1549366021-9f761d450615?q=80&w=1200&auto=format&fit=crop">
-</div>
-
-<div class="info">
-
-<h2>🐯 Tigre</h2>
+<img 
+src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=800"
+width="300"
+style="border-radius:15px;"
+>
 
 <p>
-El tigre es el felino más grande del mundo. 
-Sus rayas negras son únicas y es un excelente cazador y nadador.
+El tigre es el felino más grande del mundo y uno de los animales más impresionantes de la naturaleza. Su pelaje naranja con rayas negras le ayuda a esconderse entre la hierba y los árboles. Es un cazador rápido, fuerte y silencioso, capaz de nadar muy bien en ríos y lagos. Sus ojos brillantes y su poderoso rugido lo convierten en uno de los depredadores más temidos del planeta.
 </p>
 
-<div class="datos">
-<div class="dato">🌍 Asia</div>
-<div class="dato">🍖 Carnívoro</div>
-<div class="dato">⚡ Muy veloz</div>
-</div>
+<br>
 
-</div>
-</div>
+<h2 style="color:#f59e0b;">
+🦅 Águila
+</h2>
 
-<!-- AGUILA -->
-
-<div class="tarjeta">
-
-<div class="imagen">
-<img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?q=80&w=1200&auto=format&fit=crop">
-</div>
-
-<div class="info">
-
-<h2>🦅 Águila</h2>
+<img 
+src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4?q=80&w=800"
+width="300"
+style="border-radius:15px;"
+>
 
 <p>
-El águila tiene una vista increíble y puede volar a grandes alturas con mucha elegancia.
+El águila es un ave increíblemente veloz y valiente. Tiene una vista tan aguda que puede encontrar a su presa desde muy alto en el cielo. Sus alas enormes le permiten volar entre montañas y nubes con gran elegancia. En muchas culturas representa la fuerza, la libertad y el poder.
 </p>
 
-<div class="datos">
-<div class="dato">☁️ Gran altura</div>
-<div class="dato">👀 Vista aguda</div>
-<div class="dato">🪶 Ave rapaz</div>
-</div>
+<br>
 
-</div>
-</div>
+<h2 style="color:#22c55e;">
+🐬 Delfín
+</h2>
 
-<!-- DELFIN -->
-
-<div class="tarjeta">
-
-<div class="imagen">
-<img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200&auto=format&fit=crop">
-</div>
-
-<div class="info">
-
-<h2>🐬 Delfín</h2>
+<img 
+src="https://images.unsplash.com/photo-1607153333879-c174d265f1d2?q=80&w=800"
+width="300"
+style="border-radius:15px;"
+>
 
 <p>
-Los delfines son inteligentes, amigables y les encanta nadar y jugar en grupo.
+El delfín es uno de los animales marinos más inteligentes y juguetones. Le encanta nadar en grupos y hacer saltos sobre las olas. Se comunica mediante sonidos especiales y puede ayudar a otros delfines cuando están en peligro. Muchas personas lo consideran un animal amigable y muy curioso.
 </p>
 
-<div class="datos">
-<div class="dato">🌊 Océano</div>
-<div class="dato">🧠 Inteligente</div>
-<div class="dato">💙 Social</div>
-</div>
+<h2 style="color:#34AE37">
+  🐢 Tortuga
+</h2>
 
-</div>
-</div>
+<img src="https://i.ibb.co/ZzFkxTpq/turtles-hero-563115.jpg"
 
-<!-- TORTUGA -->
-
-<div class="tarjeta">
-
-<div class="imagen">
-<img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?q=80&w=1200&auto=format&fit=crop">
-</div>
-
-<div class="info">
-
-<h2>🐢 Tortuga</h2>
+ width="300"
+ style="border-radius:15px;">
 
 <p>
-La tortuga es tranquila y resistente. Algunas especies pueden vivir más de 100 años.
+  La tortuga es un animal tranquilo y resistente que existe desde hace millones de años. Su caparazón duro funciona como una armadura para protegerse de los peligros. Algunas tortugas viven en el mar y recorren enormes distancias nadando. Además, pueden vivir muchísimos años, convirtiéndose en unos de los animales más longevos del planeta.
 </p>
 
-<div class="datos">
-<div class="dato">🛡️ Caparazón</div>
-<div class="dato">⏳ Longeva</div>
-<div class="dato">🌎 Reptil</div>
-</div>
 
-</div>
-</div>
 
-</div>
-
-<!-- FOOTER -->
-
-<footer>
-
-<p>
-🌿 Página creada por ALEX R.C. 🌿
-</p>
+<h1 style="color:#150F70;">🌿 Página creada por ALEX R.C.🌿</h1>
 
 </footer>
 
 </body>
+   
 </html>
